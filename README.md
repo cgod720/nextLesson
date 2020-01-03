@@ -72,4 +72,6 @@ const Index = () => (
 export default Index;
 ```
 
-Now try running `npm run dev` again! What do you see?
+Now try running `npm run dev` again! What do you see? You've got your first NEXT.js app running!
+
+
