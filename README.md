@@ -40,10 +40,21 @@ To get set up for this lesson:
 - Open a terminal in VS Code (`ctrl + backtick`)
 - Open `package.json` and replace `scripts` with:
 ```js
-    "scripts": {
+"scripts": {
   "dev": "next",
   "build": "next build",
   "start": "next start"
 }
 ```
-- Start the React Dev Server: `$ npm start`
+- `touch .gitignore` and add `node_modules` to that file
+- Start the React Dev Server: `$ npm run dev`
+
+```js
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! testing@1.0.0 dev: `next`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the testing@1.0.0 dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+```
