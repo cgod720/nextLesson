@@ -60,3 +60,16 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 ```
 ---
 # LET'S GET STARTED!
+
+Make a directory called `pages` -- this directory will hold all of the files that will make up your routes.
+
+Inside of your `pages` directory, add a file called `index.js` and add the following:
+```js
+const Index = () => (
+    <div>First Next App!</div>
+)
+
+export default Index;
+```
+
+Now try running `npm run dev` again! What do you see?
