@@ -58,5 +58,5 @@ npm ERR!
 npm ERR! Failed at the testing@1.0.0 dev script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 ```
-
+---
 # LET'S GET STARTED!
