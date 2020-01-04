@@ -32,7 +32,9 @@ This lesson will cover the basics of creating a NEXT.js app, styling inside of e
 
 ## Why use NEXT.js?
 
-NEXT apps load faster because of [code-splitting](https://reactjs.org/docs/code-splitting.html) 
+NEXT apps load faster because of [code-splitting](https://reactjs.org/docs/code-splitting.html).  Code splitting allows your app to "lazy-load" only the parts of your app that are needed by the user, instead of loading all of your code, some of which the user may never need or see. This makes loading your app in the browser super fast!
+
+Client-side routing in next is page based and intuitive.
 
 ## Who uses NEXT.js?
 
