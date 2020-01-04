@@ -36,7 +36,7 @@ SSR -- Server side rendering is the process of taking a client-side JS framework
 
 [Code-splitting](https://reactjs.org/docs/code-splitting.html) allows your app to "lazy-load" only the parts of your app that are needed by the user, instead of loading all of your code, some of which the user may never need or see. This happens because your code gets split into bundles, making loading your app in the browser super fast!
 
-Client-side routing in next is page based and intuitive.
+Client-side routing in NEXT is page based and intuitive.
 
 ## Who uses NEXT.js?
 
@@ -89,6 +89,32 @@ const Index = () => (
 export default Index;
 ```
 
-Now try running `npm run dev` again. Go to `localhost:3000` in the browser. What do you see?
+Try running `npm run dev` again. Now that there are no errors in the console, go to `localhost:3000` in the browser. What do you see?
+
+NEXT used the `index.js` file in your `pages` directory as the landing page for your app.
+
+
+Now let's add an About page to our app. Create a file called `about.js` in the pages directory and add the following:
+
+```js
+const About = () => (
+    <div>This is the about page</div>
+)
+
+export default About;
+```
+
+Save that file and go to `localhost:3000/about` and you should see your `about.js` file rendered in the browser. Routing with NEXT is that easy!
+
+Let's link the index page and about page together. We can import NEXT's Link API to start using `<Link>` tags. Add this line to the top of the index and about pages: `import Link from 'next/link'`
+
+The best part about using `Link` in NEXT is that as long as the corresponding url is local, it is prefetched so when the link is clicked on, the front end shows the new page without sending a request to the server and therefore is rendered lightning fast.
+
+Now that we've imported `Link` we can create tags to link our pages:
+
+You can add this line to your index page `<Link href="/about">About</Link>`. Now do the same for your about page.
+
+
+
 
 
