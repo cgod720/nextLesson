@@ -32,11 +32,15 @@ This lesson will cover the basics of creating a NEXT.js app, styling inside of e
 
 ## Why use NEXT.js?
 
-NEXT apps load faster because of [code-splitting](https://reactjs.org/docs/code-splitting.html).  Code splitting allows your app to "lazy-load" only the parts of your app that are needed by the user, instead of loading all of your code, some of which the user may never need or see. This makes loading your app in the browser super fast!
+SSR -- Server side rendering is the process of taking a client-side JS framework website(Angular, React, Vue) and rendering it to static HTML and CSS on the server. NEXT uses this to parse the JS we used to write our HTML and CSS, and sends HTML and CSS back to the browser so it can be seen by the user immediately, while the JS is still loading in the background.
+
+[Code-splitting](https://reactjs.org/docs/code-splitting.html) allows your app to "lazy-load" only the parts of your app that are needed by the user, instead of loading all of your code, some of which the user may never need or see. This happens because your code gets split into bundles, making loading your app in the browser super fast!
 
 Client-side routing in next is page based and intuitive.
 
 ## Who uses NEXT.js?
+
+<img src="/images/companies.jpg"/>
 
 [Companies](https://nextjs.org/showcase) that use NEXT.js
 
@@ -85,6 +89,6 @@ const Index = () => (
 export default Index;
 ```
 
-Now try running `npm run dev` again! What do you see? You've got your first NEXT.js app running!
+Now try running `npm run dev` again. Go to `localhost:3000` in the browser. What do you see?
 
 
