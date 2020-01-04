@@ -24,9 +24,20 @@
 
 ## Intro
 
-[NEXT.js](https://nextjs.org/) is server-side React framework!
-
 This lesson will cover the basics of creating a NEXT.js app, styling inside of each component and fetching from a 3rd party API.
+
+## What is NEXT.js?
+
+[NEXT.js](https://nextjs.org/) is an open source React framework!
+
+## Why use NEXT.js?
+
+NEXT apps load faster because of [code-splitting](https://reactjs.org/docs/code-splitting.html) 
+
+## Who uses NEXT.js?
+
+[Companies](https://nextjs.org/showcase) that use NEXT.js
+
 
 ## Set Up
 
