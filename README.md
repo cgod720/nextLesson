@@ -119,6 +119,12 @@ Now that we've imported `Link` we can create tags to link our pages Make a `<nav
 </nav>
 
 ```
+This could get repetitive if we had a bunch of pages that have the nav bar, so we can make this a component to make it a little cleaner.
+
+In your root directory `mkdir components` and add a `Nav.js` file. Make a component for Nav just like you'd normally do in React. Now let's take the code for the nav bar and put it in this component.
+
+Don't forget to import `React` and `Link`. Now we can replace the nav bar code w the Nav component in our pages. After you've saved the page should look and work like it did before.
+
 
 
 
