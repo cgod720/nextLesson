@@ -1,12 +1,20 @@
-import Link from 'next/link';
+import Nav from '../components/Nav'
 
-
-const Index = () => (
+const Index = (props) => (
     <div>
-        <Link href="/about">About</Link>
+        <Nav />
         <h1>First Next App!</h1>
 
     </div>
 )
+
+
+Index.getInitialProps = async function(){
+    const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+    const rates = await res.json()
+    return {
+        rates: rates
+    }
+}
 
 export default Index;

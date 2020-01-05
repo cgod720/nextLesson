@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import Nav from '../components/Nav'
 
 const About = () => (
     <div>
-        <Link href="/">Home</Link>
+        <Nav />
         <h1>About page yo!</h1>
     </div>
 )

@@ -110,9 +110,15 @@ Let's link the index page and about page together. We can import NEXT's Link API
 
 The best part about using `Link` in NEXT is that as long as the corresponding url is local, it is prefetched so when the link is clicked on, the front end shows the new page without sending a request to the server and therefore is rendered lightning fast.
 
-Now that we've imported `Link` we can create tags to link our pages:
+Now that we've imported `Link` we can create tags to link our pages Make a `<nav>` element that we can add to both of our pages:
 
-You can add this line to your index page `<Link href="/about">About</Link>`. Now do the same for your about page.
+```js
+<nav>
+    <Link href="/">Home</Link>
+    <Link href="/about">About</Link>
+</nav>
+
+```
 
 
 
