@@ -363,7 +363,9 @@ Now you can `add`, `commit`, and `push` to Heroku.
 
 
 
+---
 
+###### Walkthrough/Tutorial by Carlos Godoy
 
 
 
