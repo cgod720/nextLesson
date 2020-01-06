@@ -13,9 +13,9 @@
 ## Road Map
 
 - Intro
-- Who uses NEXT.js?
-- Why use NEXT.js?
 - What is NEXT.js?
+- Why use NEXT.js?
+- Who uses NEXT.js?
 - Set Up
 - Render your app
 - getInitialProps
@@ -31,6 +31,9 @@ This lesson will cover the basics of creating a NEXT.js app, styling inside of e
 [NEXT.js](https://nextjs.org/) is an open source React framework!
 
 ## Why use NEXT.js?
+
+Great for SEO(search-engine optimization) because of SSR. These pages are crawled by search engine bots more efficiently. NEXT also adds metadata to your app to also help web-crawlers understand the content on your pages.
+You can use a package like `nextjs-sitemap-generator` to create a sitemap but we won't be using it for our small app.
 
 SSR -- Server side rendering is the process of taking a client-side JS framework website(Angular, React, Vue) and rendering it to static HTML and CSS on the server. NEXT uses this to parse the JS we used to write our HTML and CSS, and sends HTML and CSS back to the browser so it can be seen by the user immediately, while the JS is still loading in the background.
 
