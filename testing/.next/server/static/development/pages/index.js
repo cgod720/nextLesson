@@ -160,36 +160,57 @@ const Layout = props => __jsx("div", {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/components/Nav.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 const Nav = () => __jsx("nav", {
+  className: "jsx-455957891",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: "/",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
-}, "Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+}, __jsx("a", {
+  className: "jsx-455957891",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: "/about",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, "About"));
+}, __jsx("a", {
+  className: "jsx-455957891",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "About")), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "455957891",
+  __self: undefined
+}, "a.jsx-455957891{-webkit-text-decoration:none;text-decoration:none;margin-right:5vw;color:blue;}a.jsx-455957891:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9DYXJsb3NHb2RveS9zZWlyMTExOC91bml0Mi9uZXh0L25leHRMZXNzb24vdGVzdGluZy9jb21wb25lbnRzL05hdi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPb0IsQUFHc0MsQUFNVCxZQUNoQixzQ0FOcUIsaUJBQ04sV0FDZiIsImZpbGUiOiIvVXNlcnMvQ2FybG9zR29kb3kvc2VpcjExMTgvdW5pdDIvbmV4dC9uZXh0TGVzc29uL3Rlc3RpbmcvY29tcG9uZW50cy9OYXYuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xuXG5jb25zdCBOYXYgPSAoKSA9PiAoXG4gICAgPG5hdj5cbiAgICAgICAgPExpbmsgaHJlZj1cIi9cIj48YT5Ib21lPC9hPjwvTGluaz5cbiAgICAgICAgPExpbmsgaHJlZj1cIi9hYm91dFwiPjxhPkFib3V0PC9hPjwvTGluaz5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgICAgYSB7XG4gICAgICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogNXZ3O1xuICAgICAgICAgICAgICAgIGNvbG9yOiBibHVlO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBhOmhvdmVyIHtcbiAgICAgICAgICAgICAgICBvcGFjaXR5OiAwLjY7XG4gICAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L25hdj5cbilcblxuZXhwb3J0IGRlZmF1bHQgTmF2OyJdfQ== */\n/*@ sourceURL=/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/components/Nav.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 
@@ -209,16 +230,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-float */ "./node_modules/@babel/runtime-corejs2/core-js/parse-float.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 var _jsxFileName = "/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/components/Rates.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
-class Rates extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
+class Rates extends react__WEBPACK_IMPORTED_MODULE_4__["Component"] {
   constructor(props) {
     super(props);
 
@@ -247,12 +271,14 @@ class Rates extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
   // }
   render() {
     return __jsx("div", {
+      className: "jsx-426352554",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 33
       },
       __self: this
     }, __jsx("h4", {
+      className: "jsx-426352554",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35
@@ -260,6 +286,7 @@ class Rates extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
       __self: this
     }, "$1 ", this.props.rates.base, " is worth ", this.state.currency, " in", __jsx("select", {
       onChange: this.updateCurrency,
+      className: "jsx-426352554",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 37
@@ -268,13 +295,17 @@ class Rates extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
     }, _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(this.props.rates.rates).map((key, index) => {
       return __jsx("option", {
         value: this.props.rates.rates[key],
+        className: "jsx-426352554",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
         },
         __self: this
       }, key);
-    }))));
+    }))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      id: "426352554",
+      __self: this
+    }, "select.jsx-426352554{margin-left:1vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9DYXJsb3NHb2RveS9zZWlyMTExOC91bml0Mi9uZXh0L25leHRMZXNzb24vdGVzdGluZy9jb21wb25lbnRzL1JhdGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZDNEIsQUFHeUMsZ0JBQ3BCIiwiZmlsZSI6Ii9Vc2Vycy9DYXJsb3NHb2RveS9zZWlyMTExOC91bml0Mi9uZXh0L25leHRMZXNzb24vdGVzdGluZy9jb21wb25lbnRzL1JhdGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcblxuY2xhc3MgUmF0ZXMgZXh0ZW5kcyBDb21wb25lbnQge1xuICAgIGNvbnN0cnVjdG9yKHByb3BzKXtcbiAgICAgICAgc3VwZXIocHJvcHMpXG4gICAgICAgIHRoaXMuc3RhdGUgPSB7XG4gICAgICAgICAgICBjdXJyZW5jeTogcGFyc2VGbG9hdCgxKS50b0ZpeGVkKDIpLFxuICAgICAgICAgICAgLy8gY3VycmVudFRpbWU6ICcnXG4gICAgICAgIH1cbiAgICB9XG5cbiAgICB1cGRhdGVDdXJyZW5jeSA9IChldmVudCkgPT4ge1xuICAgICAgICB0aGlzLnNldFN0YXRlKHtcbiAgICAgICAgICAgIGN1cnJlbmN5OiBwYXJzZUZsb2F0KGV2ZW50LnRhcmdldC52YWx1ZSkudG9GaXhlZCgyKSxcbiAgICAgICAgICAgIC8vIGN1cnJlbnRUaW1lOiB0aGlzLnVwZGF0ZVRpbWUodGhpcy5wcm9wcy5yYXRlcy50aW1lX2xhc3RfdXBkYXRlZClcbiAgICAgICAgfSlcbiAgICB9XG5cbiAgICAvLyB1cGRhdGVUaW1lID0gYXN5bmMgKHNlY3MpID0+IHtcbiAgICAvLyAgICAgbGV0IHRpbWUgPSBhd2FpdCBuZXcgRGF0ZSgxOTcwLCAwLCAxKVxuICAgIC8vICAgICB0aW1lLnNldFNlY29uZHMoc2VjcylcbiAgICAvLyAgICAgcmV0dXJuIHRpbWVcbiAgICAvLyB9XG5cbiAgICAvLyBjb21wb25lbnREaWRNb3VudCgpe1xuICAgIC8vICAgICB0aGlzLnNldFN0YXRlKHtcbiAgICAvLyAgICAgICAgIGN1cnJlbnRUaW1lOiB0aGlzLnVwZGF0ZVRpbWUodGhpcy5wcm9wcy5yYXRlcy50aW1lX2xhc3RfdXBkYXRlZClcbiAgICAvLyAgICAgfSlcbiAgICAvLyB9XG5cbiAgICByZW5kZXIoKXtcbiAgICAgICAgcmV0dXJuKFxuICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICB7LyogPGg0PkN1cnJlbnQgdGltZToge3RoaXMuc3RhdGUuY3VycmVudFRpbWV9PC9oND4gKi99XG4gICAgICAgICAgICAgICAgPGg0PlxuICAgICAgICAgICAgICAgICAgICAkMSB7dGhpcy5wcm9wcy5yYXRlcy5iYXNlfSBpcyB3b3J0aCB7dGhpcy5zdGF0ZS5jdXJyZW5jeX0gaW5cbiAgICAgICAgICAgICAgICAgICAgPHNlbGVjdCBvbkNoYW5nZT17dGhpcy51cGRhdGVDdXJyZW5jeX0+XG4gICAgICAgICAgICAgICAgICAgICAgICB7T2JqZWN0LmtleXModGhpcy5wcm9wcy5yYXRlcy5yYXRlcykubWFwKChrZXksIGluZGV4KSA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPXt0aGlzLnByb3BzLnJhdGVzLnJhdGVzW2tleV19PntrZXl9PC9vcHRpb24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgICAgfSl9XG4gICAgICAgICAgICAgICAgICAgIDwvc2VsZWN0PlxuXG4gICAgICAgICAgICAgICAgPC9oND5cbiAgICAgICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgICAgIHNlbGVjdCB7XG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIClcbiAgICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IFJhdGVzOyJdfQ== */\n/*@ sourceURL=/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/components/Rates.js */"));
   }
 
 }
@@ -2154,39 +2185,46 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Rates__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Rates */ "./components/Rates.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Rates__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Rates */ "./components/Rates.js");
 var _jsxFileName = "/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/pages/index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
-const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx("h1", {
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
   },
   __self: undefined
-}, "Currency Exchange Rates"), __jsx(_components_Rates__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  rates: props.rates,
+}, __jsx("h1", {
+  className: "jsx-2300788390",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}));
+}, "Currency Exchange Rates"), __jsx(_components_Rates__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  rates: props.rates,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "2300788390",
+  __self: undefined
+}, "h1.jsx-2300788390,.jsx-2300788390{font-family:'Open Sans';color:grey;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9DYXJsb3NHb2RveS9zZWlyMTExOC91bml0Mi9uZXh0L25leHRMZXNzb24vdGVzdGluZy9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXb0IsQUFHeUMsd0JBRTdCLFdBQUMiLCJmaWxlIjoiL1VzZXJzL0Nhcmxvc0dvZG95L3NlaXIxMTE4L3VuaXQyL25leHQvbmV4dExlc3Nvbi90ZXN0aW5nL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXG5pbXBvcnQgRmV0Y2ggZnJvbSBcImlzb21vcnBoaWMtdW5mZXRjaFwiO1xuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL0xheW91dCdcbmltcG9ydCBSYXRlcyBmcm9tICcuLi9jb21wb25lbnRzL1JhdGVzJ1xuXG5cblxuY29uc3QgSW5kZXggPSAocHJvcHMpID0+IChcbiAgICA8TGF5b3V0PlxuICAgICAgICA8aDE+Q3VycmVuY3kgRXhjaGFuZ2UgUmF0ZXM8L2gxPlxuICAgICAgICA8UmF0ZXMgcmF0ZXM9e3Byb3BzLnJhdGVzfS8+XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgIGgxLCB7XG4gICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnO1xuICAgICAgICAgICAgICAgIGNvbG9yOiBncmV5XG4gICAgICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9MYXlvdXQ+XG4pXG5cblxuXG5cbkluZGV4LmdldEluaXRpYWxQcm9wcyA9IGFzeW5jICgpID0+IHtcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9hcGkuZXhjaGFuZ2VyYXRlLWFwaS5jb20vdjQvbGF0ZXN0L1VTRCcpO1xuICAgIGNvbnN0IHJhdGVzID0gYXdhaXQgcmVzLmpzb24oKVxuICAgIHJldHVybiB7XG4gICAgICAgIHJhdGVzOiByYXRlc1xuICAgIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7Il19 */\n/*@ sourceURL=/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/pages/index.js */"));
 
 Index.getInitialProps = async () => {
   const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
@@ -2396,6 +2434,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 

@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 
 const About = () => (
     <Layout>
-        <h1>About page yo!</h1>
+        <h1>This app was built as a tutorial for NEXT.js</h1>
     </Layout>
 )
 

@@ -312,7 +312,29 @@ Let's learn how to style and then you can go finish the app to look how you'd li
 
 ---
 
-### Style JSX
+### Styling Components in JSX
+
+In NEXT it has become popular to style components right inside of them in order to avoid having to import and keep track of multiple CSS files.
+
+Right underneath the content of our component, we can add  `<style jsx>` tags.
+
+Using these tags, we can use CSS just as we normally would:
+
+```js
+<style jsx>{`
+    h1, {
+        font-family: 'Open Sans';
+        color: grey
+    }
+`}</style>
+```
+
+
+### Congrats! You've built your first app in NEXT.js. Now go style it however you'd like!
+
+
+
+
 
 
 

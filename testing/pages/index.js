@@ -4,13 +4,21 @@ import Layout from '../components/Layout'
 import Rates from '../components/Rates'
 
 
+
 const Index = (props) => (
     <Layout>
         <h1>Currency Exchange Rates</h1>
         <Rates rates={props.rates}/>
-
+        <style jsx>{`
+            h1, {
+                font-family: 'Open Sans';
+                color: grey
+            }
+      `}</style>
     </Layout>
 )
+
+
 
 
 Index.getInitialProps = async () => {

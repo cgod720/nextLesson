@@ -43,6 +43,11 @@ class Rates extends Component {
                     </select>
 
                 </h4>
+                <style jsx>{`
+                    select {
+                        margin-left: 1vw;
+                    }
+                `}</style>
             </div>
         )
     }
