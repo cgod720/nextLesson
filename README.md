@@ -200,7 +200,7 @@ const Index = () => (
 
 ## getInitialProps()
 
-So with this shell with can make any type of app we want. We are going to create a currency exchange rate app using data from an external API. 
+So with this shell with can make any type of app we want. We are going to create a currency exchange rate app using data from an external [API](https://www.exchangerate-api.com/). 
 
 Using the `getInitialProps` method, we can run an asynchronous function on the server to retrieve the data from the API and then pass it to the page as props.
 
