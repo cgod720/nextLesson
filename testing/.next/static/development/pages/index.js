@@ -9149,21 +9149,22 @@ var _jsxFileName = "/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/pa
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
+var rates = {};
 
-var Index = function Index() {
+var Index = function Index(props) {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
-  }, "First Next App!"), "hello");
+  }, "First Next App!"));
 };
 
 Index.getInitialProps = function _callee() {

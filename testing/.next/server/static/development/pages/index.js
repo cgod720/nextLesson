@@ -2035,22 +2035,23 @@ var _jsxFileName = "/Users/CarlosGodoy/seir1118/unit2/next/nextLesson/testing/pa
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+let rates = {};
 
-const Index = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 9
   },
   __self: undefined
-}, "First Next App!"), "hello");
+}, "First Next App!"));
 
-Index.getInitialProps = async function () {
+Index.getInitialProps = async () => {
   const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
   const rates = await res.json();
   return {

@@ -172,7 +172,7 @@ Add this line to the top of your page: `import Head from next/head`. Using this 
 
 ```js
 <Head>
-    <title>Currency Exchange</title>
+    <title>Currency Exchange Rates</title>
     <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/hotel-10-1/48/452-512.png">
 </Head>
 ```
@@ -195,8 +195,32 @@ const Index = () => (
 ```
 ---
 
-## 
+## getInitialProps()
 
+So with this shell with can make any type of app we want. We are going to create a currency exchange rate app using data from an external API. 
+
+Using the `getInitialProps` method, we can run an asynchronous function on the server to retrieve the data from the API and then pass it to the page as props.
+
+First, we'll have to install `isomorphic unfetch` to use fetch with NEXT. Run `npm i isomorphic-unfetch` in your project's root directory.
+
+Now import it at the top of your Index page: `import fetch from 'isomorphic-unfetch` and we're ready to go.
+
+Add the following code to underneath your Index function:
+
+```js
+Index.getInitialProps = async () => {
+    const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD')
+    const data = await res.json()
+    return {
+        data: data
+    }
+}
+```
+
+The keyword `async` in front of a function means that the function returns a `Promise` even if the code inside the function is not a promise.
+We are using a `Promise` by using fetch, so we want to use `async` so that we can use another keyword. `await` waits for a `Promise` to return something before running the code that follows it. Using `await` we can now wait until our fetch has retrieved our data before setting it to our `res` variable. The same applies for the next line where we wait for `res` to become json before setting it to the `data` variable and then returning it.
+
+You can read more about `async await` [here](https://javascript.info/async-await)
 
 
 
