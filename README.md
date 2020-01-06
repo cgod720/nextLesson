@@ -206,7 +206,7 @@ Using the `getInitialProps` method, we can run an asynchronous function on the s
 
 First, we'll have to install `isomorphic unfetch` to use fetch with NEXT. Run `npm i isomorphic-unfetch` in your project's root directory.
 
-Now import it at the top of your Index page: `import fetch from 'isomorphic-unfetch` and we're ready to go.
+Now import it at the top of your Index page: `import fetch from 'isomorphic-unfetch'` and we're ready to go.
 
 Add the following code to underneath your Index function:
 
