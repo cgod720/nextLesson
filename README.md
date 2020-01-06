@@ -244,8 +244,6 @@ import Fetch from "isomorphic-unfetch";
 import Layout from '../components/Layout'
 import Rates from '../components/Rates'
 
-let rates = {};
-
 const Index = (props) => (
     <Layout>
         <h1>Currency Exchange Rates</h1>
@@ -307,6 +305,14 @@ class Rates extends Component {
 export default Rates;
 ```
 
+
+So now you have a fully functioning app that shows you the value of your dollars in the selected currency.
+
+Let's learn how to style and then you can go finish the app to look how you'd like.
+
+---
+
+### Style JSX
 
 
 

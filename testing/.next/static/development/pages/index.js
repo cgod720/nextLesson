@@ -155,38 +155,50 @@ function (_Component) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "updateCurrency", function (event) {
       _this.setState({
-        currency: _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(event.target.value).toFixed(2)
+        currency: _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(event.target.value).toFixed(2) // currentTime: this.updateTime(this.props.rates.time_last_updated)
+
       });
     });
 
     _this.state = {
-      currency: _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(1).toFixed(2)
+      currency: _babel_runtime_corejs2_core_js_parse_float__WEBPACK_IMPORTED_MODULE_1___default()(1).toFixed(2) // currentTime: ''
+
     };
     return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Rates, [{
     key: "render",
+    // updateTime = async (secs) => {
+    //     let time = await new Date(1970, 0, 1)
+    //     time.setSeconds(secs)
+    //     return time
+    // }
+    // componentDidMount(){
+    //     this.setState({
+    //         currentTime: this.updateTime(this.props.rates.time_last_updated)
+    //     })
+    // }
     value: function render() {
       var _this2 = this;
 
       return __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 33
         },
         __self: this
       }, __jsx("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 35
         },
         __self: this
       }, "$1 ", this.props.rates.base, " is worth ", this.state.currency, " in", __jsx("select", {
         onChange: this.updateCurrency,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 37
         },
         __self: this
       }, _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(this.props.rates.rates).map(function (key, index) {
@@ -194,7 +206,7 @@ function (_Component) {
           value: _this2.props.rates.rates[key],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 40
           },
           __self: this
         }, key);
@@ -9607,26 +9619,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var rates = {};
 
 var Index = function Index(props) {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, "Currency Exchange Rates"), __jsx(_components_Rates__WEBPACK_IMPORTED_MODULE_4__["default"], {
     rates: props.rates,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }));
