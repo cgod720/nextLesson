@@ -63,7 +63,8 @@ To get set up for this lesson:
 "scripts": {
   "dev": "next",
   "build": "next build",
-  "start": "next start"
+  "start": "next start -p $PORT",
+  "heroku-postbuild": "npm run build"
 }
 ```
 - `touch .gitignore` and add `node_modules` to that file
