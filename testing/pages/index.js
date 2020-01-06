@@ -1,11 +1,12 @@
-import Nav from '../components/Nav'
+
+import Fetch from "isomorphic-unfetch";
+import Layout from '../components/Layout'
 
 const Index = (props) => (
-    <div>
-        <Nav />
+    <Layout>
         <h1>First Next App!</h1>
 
-    </div>
+    </Layout>
 )
 
 

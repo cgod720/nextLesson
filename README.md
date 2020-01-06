@@ -125,6 +125,30 @@ In your root directory `mkdir components` and add a `Nav.js` file. Make a compon
 
 Don't forget to import `React` and `Link`. Now we can replace the nav bar code w the Nav component in our pages. After you've saved the page should look and work like it did before.
 
+---
+
+#### Layout Component
+
+We've cleaned up our code a little bit but now if we'd like to scale we can add a component to give all of our pages a general layout.
+
+Create a file called `Layout.js` in your components directory. Import your Nav component into this file so you can add it.
+
+Now your code should look like this:
+
+```js
+    import Nav from "/Nav"
+
+    const Layout = () => (
+        <div>
+            <Nav />
+
+        </div>
+    )
+
+    export default Layout;
+```
+
+
 
 
 
