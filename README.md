@@ -136,17 +136,66 @@ Create a file called `Layout.js` in your components directory. Import your Nav c
 Now your code should look like this:
 
 ```js
-    import Nav from "/Nav"
+import Nav from "/Nav"
 
-    const Layout = () => (
-        <div>
-            <Nav />
+const Layout = () => (
+    <div>
+        <Nav />
 
-        </div>
-    )
+    </div>
+)
 
-    export default Layout;
+export default Layout;
 ```
+
+Cool so now we have a basic layout that we can use for our pages. The benefit of using a layout component is that we can give our layout props. We can pass content from our pages to our layout component as props so that we can use the layout on any page we'd like.
+
+Pass props to your `Layout` component and add this line under your Nav component:  `{props.children}`
+
+
+```js
+import Nav from "/Nav"
+
+const Layout = (props) => (
+    <div>
+        <Nav />
+        {props.children}
+    </div>
+)
+
+export default Layout;
+```
+
+We can go back to our Index and About pages and use our `Layout` but before we do that, let's add a head to our layout so pass metadata and add things like a title and an icon to the tab on our pages.
+
+Add this line to the top of your page: `import Head from next/head`. Using this we can use head tags like we would do in ordinary HTML. Using the head tag is also one way to add external CSS or CSS libaries, but we'll add CSS a different way later. For now, add the tags below into our `Layout` component:
+
+```js
+<Head>
+    <title>Currency Exchange</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/hotel-10-1/48/452-512.png">
+</Head>
+```
+
+---
+
+
+Now let's actually use our layout on our Index and About pages. Import the `Layout` component into both files and replace the outer `<div>` tags with `<Layout>` tags. 
+
+After adding these, our app will still look the same, and our code is a lot cleaner. Your Index page should look like this:
+
+```js
+import Layout from '../components/Layout'
+
+const Index = () => (
+    <Layout>
+        <h1>First Next App!</h1>
+    </Layout>
+)
+```
+---
+
+## 
 
 
 
