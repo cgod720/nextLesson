@@ -1,12 +1,15 @@
 
 import Fetch from "isomorphic-unfetch";
 import Layout from '../components/Layout'
+import Rates from '../components/Rates'
 
 let rates = {};
 
 const Index = (props) => (
     <Layout>
-        <h1>First Next App!</h1>
+        <h1>Currency Exchange Rates</h1>
+        <Rates rates={props.rates}/>
+
     </Layout>
 )
 

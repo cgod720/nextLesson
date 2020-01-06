@@ -218,9 +218,95 @@ Index.getInitialProps = async () => {
 ```
 
 The keyword `async` in front of a function means that the function returns a `Promise` even if the code inside the function is not a promise.
-We are using a `Promise` by using fetch, so we want to use `async` so that we can use another keyword. `await` waits for a `Promise` to return something before running the code that follows it. Using `await` we can now wait until our fetch has retrieved our data before setting it to our `res` variable. The same applies for the next line where we wait for `res` to become json before setting it to the `data` variable and then returning it.
+We are using a `Promise` by using fetch, so we want to use `async` so that we can use another keyword:
+
+`await` waits for a `Promise` to return a result before running the code that follows it. 
+
+Using `await` we can now wait until our fetch has retrieved our data before setting it to our `res` variable. 
+
+The same applies for the next line where we wait for `res` to become json before setting it to the `data` variable and then returning it.
 
 You can read more about `async await` [here](https://javascript.info/async-await)
+
+---
+
+Now that we have the data from our API to use as props, we can start shaping our app. Check the `components` tab in your dev tools to make sure your Index page is receiving the data as props.
+
+When you do, add props as parameter toy your Index function so we can use them inside.
+
+Now we can use the data here and also pass it down to any other components.
+
+We are going to pass the data down to a <Rates /> component to keep our index page code clean. Update your index page to look like the following:
+
+
+```js
+import Fetch from "isomorphic-unfetch";
+import Layout from '../components/Layout'
+import Rates from '../components/Rates'
+
+let rates = {};
+
+const Index = (props) => (
+    <Layout>
+        <h1>Currency Exchange Rates</h1>
+        <Rates rates={props.rates}/>
+
+    </Layout>
+)
+
+
+Index.getInitialProps = async () => {
+    const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+    const rates = await res.json()
+    return {
+        rates: rates
+    }
+}
+
+export default Index;
+```
+
+We get an error since we haven't made a Rates component yet. Run `touch Rates.js` in your components directory. Go ahead and paste the code below since we already know how to work with data:
+
+```js
+import React, { Component } from 'react';
+
+class Rates extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            currency: parseFloat(1).toFixed(2)
+        }
+    }
+
+    updateCurrency = (event) => {
+        this.setState({
+            currency: parseFloat(event.target.value).toFixed(2)
+        })
+    }
+
+    render(){
+        return(
+            <div>
+                <h4>
+                    $1 {this.props.rates.base} is worth {this.state.currency} in
+                    <select onChange={this.updateCurrency}>
+                        {Object.keys(this.props.rates.rates).map((key, index) => {
+                            return(
+                                <option value={this.props.rates.rates[key]}>{key}</option>
+                            )
+                        })}
+                    </select>
+
+                </h4>
+            </div>
+        )
+    }
+}
+
+export default Rates;
+```
+
 
 
 
