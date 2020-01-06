@@ -337,7 +337,29 @@ Using these tags, we can use CSS just as we normally would:
 ### Congrats! You've built your first app in NEXT.js. Now go style it however you'd like!
 
 
+---
 
+### Bonus
+
+#### Deployment to Heroku
+
+We already have the appropriate scripts for deployment on Heroku inside of our `scripts` on out package.json file.
+
+Check to see if you have the Heroku CLI installed on your computer. Run `heroku -v`
+
+If you get a version number back then you already have it installed. If not, first make sure you have an account already on [Heroku](https://heroku.com).
+
+After your account is made, you can run `brew tap heroku/brew && brew install heroku` 
+
+Once that is installed you can run `heroku login` to start using the CLI to push your app to heroku.
+
+In your project's root directory run `git init` to put the project in a repo that we can push to Heroku. 
+
+Now we can run `heroku create <name of your choice>`
+
+Run `git remote -v` to check and make sure that `heroku` is now a remote you can access. If not, you can run `git remote add heroku <heroku git address>` to add your new app's git repo as a remote.
+
+Now you can `add`, `commit`, and `push` to Heroku.
 
 
 
